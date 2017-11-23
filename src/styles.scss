@@ -1,3 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700,900|Montserrat:400,400i');
+@import 'grey-deep-orange.scss';
+body {
+    background-image: url('/assets/gplaypattern_@2X.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    margin: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Karla', sans-serif;
+    color: $primary-text-color;
+}
+
