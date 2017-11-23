@@ -1,5 +1,11 @@
+// core
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+// third party
+
+import 'hammerjs';
 
 // modules
 
@@ -24,9 +30,12 @@ import { UserProfileComponent } from './users/user-profile/user-profile.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,\
+    MaterialModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
