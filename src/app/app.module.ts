@@ -23,6 +23,7 @@ import { UserProfileComponent } from './users/user-profile/user-profile.componen
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainComponent } from './layout/main/main.component';
+import { LostComponent } from './lost/lost.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { MainComponent } from './layout/main/main.component';
     UserProfileComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    LostComponent
   ],
   imports: [
     BrowserModule,
