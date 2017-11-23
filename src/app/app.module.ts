@@ -6,35 +6,43 @@ import { NgModule } from '@angular/core';
 // third party
 
 import 'hammerjs';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // modules
 
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { MaterialModule} from './core/material.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // components
 
 import { AppComponent } from './app.component';
 import { UserLoginComponent } from './users/user-login/user-login.component';
 import { UserProfileComponent } from './users/user-profile/user-profile.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MainComponent } from './layout/main/main.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UserLoginComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,\
+    BrowserAnimationsModule,
+    FlexLayoutModule,
     MaterialModule
   ],
   providers: [
-    
+
   ],
   bootstrap: [AppComponent]
 })
