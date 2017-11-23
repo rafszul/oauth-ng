@@ -4,7 +4,7 @@ import { MaterialModule} from './../../core/material.module';
 @Component({
   selector: 'ng-fire-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./../layout.scss']
 })
 export class HeaderComponent implements OnInit {
 
