@@ -1,4 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<ng-fire-header></ng-fire-header>
+
 <div style="text-align:center">
   <h1>
     Welcome to {{title}}!
@@ -28,6 +30,8 @@
   </div>
   <div fxLayout="row">
       <div class="left" fxFlex="20"> LEFT: 20% wide </div>
-      <div class="right" fxFlex> RIGHT: 80% wide </div>
+      <div class="right" fxFlex>
+          <router-outlet></router-outlet>
+           RIGHT: 80% wide </div>
   </div>
 </div>
