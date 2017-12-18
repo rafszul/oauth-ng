@@ -7,12 +7,16 @@ import { UserProfileComponent } from './users/user-profile/user-profile.componen
 import { HomeComponent } from './home/home.component';
 import { CallbackComponent } from './callback/callback.component';
 
+import { CanActivateRouteGuard } from './can-activate-route.guard';
+
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'callback', component: CallbackComponent },
   { path: 'login', component: UserLoginComponent },
-  { path: 'profile', component: UserProfileComponent },
+  { path: 'profile', component: UserProfileComponent,
+  canActivate: [CanActivateRouteGuard]
+ },
   { path: '**', component: LostComponent }
 ];
 

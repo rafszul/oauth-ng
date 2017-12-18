@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // modules
 
 import { AppRoutingModule } from './app-routing.module';
+import { CanActivateRouteGuard } from './can-activate-route.guard';
 import { CoreModule } from './core/core.module';
 import { MaterialModule} from './core/material.module';
 
@@ -55,7 +56,8 @@ import { AuthService } from './core/auth.service';
     HttpClientModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    CanActivateRouteGuard
   ],
   bootstrap: [AppComponent]
 })
