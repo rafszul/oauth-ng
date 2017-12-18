@@ -24,6 +24,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainComponent } from './layout/main/main.component';
 import { LostComponent } from './lost/lost.component';
+import { HomeComponent } from './home/home.component';
+import { CallbackComponent } from './callback/callback.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { LostComponent } from './lost/lost.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    LostComponent
+    LostComponent,
+    HomeComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
