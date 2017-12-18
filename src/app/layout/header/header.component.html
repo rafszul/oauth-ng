@@ -5,7 +5,8 @@
       <span class="example-spacer"></span>
 
       <button mat-button routerLink="/home">Home</button>
-      <button mat-button  (click)="auth.login()">Login</button>
-      <button mat-button routerLink="/profile">Profile</button>
+      <button mat-button *ngIf="!auth.isAuthenticated()" (click)="auth.login()">Login</button>
+      <button mat-button *ngIf="auth.isAuthenticated()" (click)="auth.logout()">Logout</button>
+      <button mat-button *ngIf="auth.isAuthenticated()" routerLink="/profile">Profile</button>
     </mat-toolbar-row>
   </mat-toolbar>
