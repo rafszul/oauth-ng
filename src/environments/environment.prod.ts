@@ -3,6 +3,7 @@ export const environment = {
   auth0: {
     domain: 'smartxpo.eu.auth0.com',
     clientId: 'fGZ7ZCDyMD9nXTW3xfsQBpxoSTf2AAl5',
-    callbackURL: 'https://int.v3.smartxpo.com/callback'
+    callbackURL: 'https://int.v3.smartxpo.com/callback' // <-- way too specific, maybe change to something like `{base href}`
+    // + remove `/callback`
   }
 };

@@ -12,7 +12,7 @@ import { Title } from '@angular/platform-browser';
 export class CallbackComponent implements OnInit {
 
   // API_URL: string = 'http://<your-application-domain>/api';
-  pageTitle = 'Home / Events';
+  pageTitle = 'Home / Events  a.k.a. /callback';
   API_URL: string = 'https://slozgrpoei.execute-api.eu-west-1.amazonaws.com/int_v3_smartxpo_com/event/';
   event: string;
 
