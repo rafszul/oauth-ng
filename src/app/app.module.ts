@@ -2,6 +2,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 
 // third party
 
@@ -27,6 +29,9 @@ import { LostComponent } from './lost/lost.component';
 import { HomeComponent } from './home/home.component';
 import { CallbackComponent } from './callback/callback.component';
 
+// services:
+
+import { AuthService } from './core/auth.service';
 
 @NgModule({
   declarations: [
@@ -45,10 +50,12 @@ import { CallbackComponent } from './callback/callback.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    HttpModule,
+    HttpClientModule
   ],
   providers: [
-
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

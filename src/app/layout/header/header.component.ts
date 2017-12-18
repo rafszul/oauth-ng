@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MaterialModule} from './../../core/material.module';
+import { AuthService } from './../../core/auth.service';
 
 @Component({
   selector: 'ng-fire-header',
@@ -8,7 +9,7 @@ import { MaterialModule} from './../../core/material.module';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
   }
